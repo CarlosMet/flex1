@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+        <style type="text/tailwindcss">
+            @layer utilities {
+              .content-auto {
+                content-visibility: auto;
+              }
+            }
+          </style>
+           <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+<body class="w-[1920px] h-[1080px] bg-gray-300 flex flex-col justify-between p-4">
+    <div class="flex items-center justify-between">
+        <header class="w-[1288px] h-[260px] bg-pink-400 flex items-center">
+            <ul class="flex items-center justify-center w-full gap-20">
+                <li class="w-[334px] h-[79px] bg-white grid place-items-center">Enlace</li>
+                <li class="w-[334px] h-[79px] bg-white grid place-items-center">Enlace</li>
+                <li class="w-[334px] h-[79px] bg-white grid place-items-center">Enlace</li>
+            </ul>
+        </header>
+        <img class="w-[547px] h-[260px]" src="https://placehold.co/547x260" alt="">
+    </div>
+
+    <div class="flex justify-between">
+        <main class="w-[945px] h-[548px] bg-yellow-500 grid place-items-center ">
+            <img class="w-[547px] h-[260px]" src="https://placehold.co/547x260" alt="">
+        </main>
+        <div class="flex flex-col justify-between">
+            <section class="w-[907px] h-[269px] bg-purple-600"></section>
+            <section class="w-[907px] h-[269px] bg-purple-600"></section>
+        </div>
+    </div>
+
+    <div class="[&>*]:bg-green-400 flex justify-between">
+        <article class="w-[646px] h-[175px]">Article</article>
+        <article class="w-[646px] h-[175px]">Article</article>
+        <footer class="w-[510px] h-[175px]">Footer</footer>
+    </div>
+
+</body>
+</html>
